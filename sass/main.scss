@@ -1,4 +1,18 @@
 
+// Base
+@import "./base/base";
+@import "./base/typography";
+
+
+// Abstracts
+@import './abstract/mixins';
+@import './abstract/variables';
+
+// Components
 @import './components/layout.scss';
-@import './pages/homepage.scss';
 @import './components/sidebar.scss';
+
+
+// Pages
+@import './pages/homepage.scss';
+@import "./pages/roles-perimisson.scss";

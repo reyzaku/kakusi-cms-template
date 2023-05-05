@@ -1,0 +1,221 @@
+#roles-permission {
+	background: #fbfcff;
+
+	.role-permission-upper-title {
+		margin-top: 52px;
+		color: $bg-neutral-400;
+		font-weight: bold;
+		font-size: 32px;
+	}
+
+	.role-permission-content {
+		margin-top: 11px;
+		@include content-container;
+		min-height: 100%;
+	}
+
+	.role-permission-tabs {
+		padding: 32px;
+		.nav-tabs {
+            width: 550px;
+            box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+            border-radius: 16px 0px 0px 16px ;
+            box-shadow: none;
+            border: none;
+			.nav-item {
+                &:nth-child(1){
+                    border-radius: 16px 0 0 16px;
+                    .active{
+                        background-color: $bg-primary-400;
+                        border-radius: 16px 0 0 16px;
+                    }
+                }
+
+                &:nth-child(3){
+                    border-radius: 0 16px 16px 0;
+                    .active{
+                        border-radius: 0 16px 16px 0;
+                    }
+                }
+
+				background-color: $bg-neutral-500;
+                button{
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: white;
+                    width: 172px;
+                }
+                .active{
+                    background-color: $bg-primary-400;
+                    border-radius: 0;
+                    color: $bg-neutral-400;
+                }
+			}
+		}
+	}
+
+    .role-permission-search-member{
+        display: flex;
+        gap:16px;
+        margin-top: 16px;
+       .role-permission-information-search{
+        position: relative;
+        width: 100%;
+        input{
+            height: 50px;
+            width: 100%;
+            border-radius: 16px;
+            background-color: $bg-neutral-50;
+            padding-left: 24px;
+            padding-top: 5px;
+            border: none;
+            &:placeholder{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $bg-neutral-200;
+            }
+            &:focus{
+                border: none;
+                outline: 0;
+            }
+
+        }
+        .button-search{
+            position: absolute;
+            right: 10px;
+            top: 20%;
+            background-color: $bg-primary-400;
+            border-radius: 12px;
+            padding: 4px 6px;
+            border: none;
+            
+        }
+       }
+       .role-permission-information-button-new-member{
+        .button-new-member{
+            background-color: $bg-primary-400;
+            width: 250px;
+            height: 50px;
+            border: none;
+            padding: 0;
+            border-radius: 16px;
+            color:black;    
+            box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+            font-size: 16px;
+            font-weight: 600;
+        
+        }
+       }
+    }
+
+    .role-permission-information{
+        margin-top: 48px;
+        .role-permission-information-title{
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 22px;
+        }
+        .role-permission-information-items{
+            padding: 35px 100px 35px 20px;
+            box-shadow: 20px 30px 15px rgba(209, 209, 209, 0.15);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 16px;
+
+            height: 100%;
+            .role-permission-information-item-left{
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                .role-permission-information-item-image{
+                    img{
+                        height: 53px;
+                        width: 53px;
+                        border-radius: 50%;
+                    }
+                }
+                .role-permission-information-item-name-email{
+                    div{
+                        &:nth-child(1){
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 24px;
+                            color: $bg-neutral-400;
+                        }
+                        &:nth-child(2){
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: $bg-neutral-200;
+                        }
+                    }
+                }
+                .role-permission-information-item-total-post{
+                    div{
+                        &:nth-child(1){
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 24px;
+                            color: $bg-neutral-400;
+                        }
+                        &:nth-child(2){
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: $bg-neutral-200;
+                        }
+                    }
+                }
+            }
+            .role-permission-information-item-role{
+                display: flex;
+                gap: 13px;
+                align-items: center;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+            }
+        }
+    }
+    
+    .role-permission-pagination{
+        margin-top: 58px;
+        .pagination{
+            display: flex;
+            gap:10px;
+            justify-content: center;
+            .page-item{
+                .page-link{
+                   height: 40px;
+                    width: 40px;
+                    border-radius: 12px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 25px;
+                    color: black;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 25px;
+                    background-color: $bg-neutral-50;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }     
+                .icon-prev{
+                    background-color: $bg-neutral-200;
+                }
+                .icon-next{
+                    background-color: $bg-neutral-500;
+                }
+            }
+            .page-item.active .page-link {
+            background-color: $bg-primary-400;
+            border: none;
+          }
+        }
+       
+    }
+}

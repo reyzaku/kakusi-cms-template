@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CMS Kakusi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+
+    <main>
+      <section id="homepage">
+        <div class="layout">
+          <div class="row">
+            <div class="col-md-2">
+              <div id="sidebar">
+                <div class="sidebar-container">
+                  <div class="sidebar-top">
+                    <div class="sidebar-profile">
+                      <img src="https://loremflickr.com/320/240" alt="img-profile">
+                      <div class="sidebar-profile-name">Resi Wicaksono</div>
+                      <div class="sidebar-profile-role">Super Admin</div>
+                    </div>
+                    <div class="sidebar-menu">
+                      <div class="sidebar-menu-items">
+                        <div>icon</div>
+                        <div><a href="#">Dashboard</a></div>
+                      </div>
+                      <div class="sidebar-menu-items">
+                        <div>icon</div>
+                        <div><a href="#">Content Management</a></div>
+                      </div>
+                      <div class="sidebar-menu-items">
+                        <div>icon</div>
+                        <div><a href="#">Tag Management</a></div>
+                      </div>
+                      <div class="sidebar-menu-items">
+                        <div>icon</div>
+                        <div><a href="#">Category Management</a></div>
+                      </div>
+                      <div class="sidebar-menu-items">
+                        <div>icon</div>
+                        <div><a href="#">Roles & Members</a></div>
+                      </div>
+                      <div class="sidebar-menu-items">
+                        <div>icon</div>
+                        <div><a href="#">Statistic Visitor</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidebar-footer">
+                    <div class="sidebar-button">
+                      <div>icon</div>
+                      <div><a href="">Logout</a></div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div id="roles-permission">
+                    <div class="role-permission-upper-title">
+                        Roles & Permission
+                    </div>
+                    <div class="role-permission-content">
+                        <div class="role-permission-tabs">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="role-permission">
+                                  <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab"  aria-controls="all-tab-pane" aria-selected="true">All</button>
+                                </li>
+                                <li class="nav-item" role="role-permission">
+                                  <button class="nav-link" id="role-tab" data-bs-toggle="tab" data-bs-target="#role-tab-pane" type="button" role="tab">Role</button>
+                                </li>
+                                <li class="nav-item" role="role-permission">
+                                  <button class="nav-link" id="permission-tab" data-bs-toggle="tab" data-bs-target="#permission-tab-pane" type="button" role="tab">Permission</button>
+                                </li>
+                            </ul>
+                            <div class="role-permission-search-member">
+                              <div class="role-permission-information-search">
+                                <input type="text" name="search-member" id="search-member" placeholder="Cari Member">
+                                <button class="button-search"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12.25 12.25L16 16M14.125 7.5625C14.125 11.1869 11.1869 14.125 7.5625 14.125C3.93813 14.125 1 11.1869 1 7.5625C1 3.93813 3.93813 1 7.5625 1C11.1869 1 14.125 3.93813 14.125 7.5625Z" stroke="#433C6F" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                  </button>
+                              </div>
+                              <div class="role-permission-information-button-new-member">
+                                <button class="button-new-member">Buat Member</button>
+                              </div>
+                            </div>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+                                    <div class="role-permission-information">
+                                      <!-- Title -->
+                                      <div class="row">
+                                        <div class="col-md-8">
+                                          <div class="role-permission-information-title">User Information</div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="role-permission-information-title">role</div>
+                                        </div>
+                                      </div>
+                                      <!-- Content For each -->
+                                      <div class="row">
+                                        <div class="col-md-8">                          
+                                          <div class="role-permission-information-items">
+                                            <div class="role-permission-information-item-left">
+                                              <div class="role-permission-information-item-image">
+                                                <img src="https://loremflickr.com/320/240" alt="img-profile">
+                                              </div>
+                                              <div class="role-permission-information-item-name-email">
+                                                <div>Resi Wicaksono</div>
+                                                <div>resi@gmail.com</div>
+                                              </div>
+                                            </div>
+                                            <div class="role-permission-information-item-total-post">
+                                                <div class="role-permission-information-item-total-post-title">Total Post</div>
+                                                <div class="role-permission-information-item-total-post-count">32</div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                    
+                                          <div class="role-permission-information-items">
+                                            <div class="role-permission-information-item-role">
+                                                <div>Icon</div>
+                                                <div>Admin</div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-8">                          
+                                          <div class="role-permission-information-items">
+                                            <div class="role-permission-information-item-left">
+                                              <div class="role-permission-information-item-image">
+                                                <img src="https://loremflickr.com/320/240" alt="img-profile">
+                                              </div>
+                                              <div class="role-permission-information-item-name-email">
+                                                <div>Resi Wicaksono</div>
+                                                <div>resi@gmail.com</div>
+                                              </div>
+                                            </div>
+                                            <div class="role-permission-information-item-total-post">
+                                                <div class="role-permission-information-item-total-post-title">Total Post</div>
+                                                <div class="role-permission-information-item-total-post-count">32</div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                    
+                                          <div class="role-permission-information-items">
+                                            <div class="role-permission-information-item-role">
+                                                <div>Icon</div>
+                                                <div>Admin</div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                      </div>
+                                 
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="role-tab-pane" role="tabpanel" aria-labelledby="role-tab" tabindex="0">Role</div>
+                                <div class="tab-pane fade" id="permission-tab-pane" role="tabpanel" aria-labelledby="permission-tab" tabindex="0">Permission</div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="role-permission-pagination">
+                      <nav>
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link icon-prev" href="#" aria-label="Previous">
+                              <span aria-hidden="true"><svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.6955e-07 6.5C0.00157424 6.22349 0.0725858 5.95076 0.207884 5.70159C0.343182 5.45242 0.539373 5.23307 0.782223 5.05945L7.01556 0.499501C7.39082 0.233047 7.843 0.0653704 8.32056 0.0155805C8.79813 -0.0342094 9.28187 0.0358894 9.71667 0.217889C10.0945 0.365497 10.4165 0.606376 10.6441 0.911758C10.8716 1.21714 10.9952 1.57412 11 1.94005L11 11.0599C10.9952 11.4259 10.8716 11.7829 10.6441 12.0882C10.4165 12.3936 10.0945 12.6345 9.71667 12.7821C9.28187 12.9641 8.79813 13.0342 8.32056 12.9844C7.843 12.9346 7.39082 12.767 7.01556 12.5005L0.782222 7.94055C0.539373 7.76693 0.343182 7.54758 0.207884 7.29841C0.0725858 7.04924 0.00157422 6.77651 6.6955e-07 6.5Z" fill="white"/>
+                                </svg>
+                                </span>
+                            </a>
+                          </li>
+                          <li class="page-item active"><a class="page-link " href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                          <li class="page-item">
+                            <a class="page-link icon-next" href="#" aria-label="Next">
+                              <span aria-hidden="true"><svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 6.5C10.9984 6.22349 10.9274 5.95076 10.7921 5.70159C10.6568 5.45242 10.4606 5.23307 10.2178 5.05945L3.98444 0.499501C3.60918 0.233047 3.157 0.0653704 2.67944 0.0155805C2.20187 -0.0342094 1.71813 0.0358894 1.28333 0.217889C0.905454 0.365497 0.583505 0.606376 0.355939 0.911758C0.128372 1.21714 0.00480714 1.57412 8.48025e-08 1.94005L4.83446e-07 11.0599C0.00480757 11.4259 0.128373 11.7829 0.355939 12.0882C0.583506 12.3936 0.905455 12.6345 1.28333 12.7821C1.71813 12.9641 2.20187 13.0342 2.67944 12.9844C3.157 12.9346 3.60918 12.767 3.98444 12.5005L10.2178 7.94055C10.4606 7.76693 10.6568 7.54758 10.7921 7.29841C10.9274 7.04924 10.9984 6.77651 11 6.5Z" fill="white"/>
+                                </svg>
+                                </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                </div>  
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

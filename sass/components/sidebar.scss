@@ -1,5 +1,6 @@
     #sidebar{
         background-color: white;
+        box-shadow: 22px 12px 141px 1px rgba(166,166,166,0.16);
 
         .sidebar-container {
             display: flex;
@@ -15,15 +16,19 @@
                     height: 126px;
                     width: 126px;
                     border-radius: 100%;
+                    object-fit: cover;
+
                 }
                 .sidebar-profile-name{
                     font-size: 24px;
                     font-weight: 500;
                     margin-top: 26px;
+                    color: #445482;
                 }
                 .sidebar-profile-role{
                     font-size: 18px;
                     font-weight: 6 400;
+                    color: #445482;
                 }
             }
             .sidebar-menu{
@@ -35,6 +40,8 @@
                 .sidebar-menu-items{
                     color: #7383B1;
                     font-size: 14px;
+                    display: flex;
+                    gap: 8px;
                     font-weight: 400;
                     a{
                         cursor: pointer;
@@ -49,6 +56,23 @@
                     
                 }
               
+            }
+
+            .sidebar-footer{
+                .sidebar-button{
+                    border-top: 1px solid rgb(115, 131, 177, 0.1);
+                    padding: 16px 0;
+                    padding-left: 32px;
+                    display: flex;
+                    gap: 14px;
+                    justify-items: center;
+                    a{
+                        text-decoration: none;
+                        color: #7383B1;
+                        font-size: 14px;
+                    }
+                }
+
             }
           
         }
