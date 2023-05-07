@@ -1,4 +1,4 @@
-#roles-permission {
+#role-permission {
 	background: #fbfcff;
 
 	.role-permission-upper-title {
@@ -8,16 +8,10 @@
 		font-size: 32px;
 	}
 
-	.role-permission-content {
-		margin-top: 11px;
-		@include content-container;
-		min-height: 100%;
-	}
-
-	.role-permission-tabs {
+    .role-permission-tabs {
 		padding: 32px;
 		.nav-tabs {
-            width: 550px;
+            width: 100%;
             box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
             border-radius: 16px 0px 0px 16px ;
             box-shadow: none;
@@ -31,7 +25,7 @@
                     }
                 }
 
-                &:nth-child(3){
+                &:nth-child(4){
                     border-radius: 0 16px 16px 0;
                     .active{
                         border-radius: 0 16px 16px 0;
@@ -43,7 +37,7 @@
                     font-size: 15px;
                     font-weight: 600;
                     color: white;
-                    width: 172px;
+                    width: 200px;
                 }
                 .active{
                     background-color: $bg-primary-400;
@@ -54,133 +48,7 @@
 		}
 	}
 
-    .role-permission-search-member{
-        display: flex;
-        gap:16px;
-        margin-top: 16px;
-       .role-permission-information-search{
-        position: relative;
-        width: 100%;
-        input{
-            height: 50px;
-            width: 100%;
-            border-radius: 16px;
-            background-color: $bg-neutral-50;
-            padding-left: 24px;
-            padding-top: 5px;
-            border: none;
-            &:placeholder{
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 24px;
-                color: $bg-neutral-200;
-            }
-            &:focus{
-                border: none;
-                outline: 0;
-            }
 
-        }
-        .button-search{
-            position: absolute;
-            right: 10px;
-            top: 20%;
-            background-color: $bg-primary-400;
-            border-radius: 12px;
-            padding: 4px 6px;
-            border: none;
-            
-        }
-       }
-       .role-permission-information-button-new-member{
-        .button-new-member{
-            background-color: $bg-primary-400;
-            width: 250px;
-            height: 50px;
-            border: none;
-            padding: 0;
-            border-radius: 16px;
-            color:black;    
-            box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
-            font-size: 16px;
-            font-weight: 600;
-        
-        }
-       }
-    }
-
-    .role-permission-information{
-        margin-top: 48px;
-        .role-permission-information-title{
-            font-size: 13px;
-            font-weight: 600;
-            line-height: 22px;
-        }
-        .role-permission-information-items{
-            padding: 35px 100px 35px 20px;
-            box-shadow: 20px 30px 15px rgba(209, 209, 209, 0.15);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 16px;
-
-            height: 100%;
-            .role-permission-information-item-left{
-                display: flex;
-                gap: 16px;
-                align-items: center;
-                .role-permission-information-item-image{
-                    img{
-                        height: 53px;
-                        width: 53px;
-                        border-radius: 50%;
-                    }
-                }
-                .role-permission-information-item-name-email{
-                    div{
-                        &:nth-child(1){
-                            font-size: 16px;
-                            font-weight: 600;
-                            line-height: 24px;
-                            color: $bg-neutral-400;
-                        }
-                        &:nth-child(2){
-                            font-size: 14px;
-                            font-weight: 400;
-                            line-height: 24px;
-                            color: $bg-neutral-200;
-                        }
-                    }
-                }
-                .role-permission-information-item-total-post{
-                    div{
-                        &:nth-child(1){
-                            font-size: 16px;
-                            font-weight: 600;
-                            line-height: 24px;
-                            color: $bg-neutral-400;
-                        }
-                        &:nth-child(2){
-                            font-size: 14px;
-                            font-weight: 400;
-                            line-height: 24px;
-                            color: $bg-neutral-200;
-                        }
-                    }
-                }
-            }
-            .role-permission-information-item-role{
-                display: flex;
-                gap: 13px;
-                align-items: center;
-                font-size: 16px;
-                font-weight: 600;
-                line-height: 24px;
-            }
-        }
-    }
-    
     .role-permission-pagination{
         margin-top: 58px;
         .pagination{
@@ -217,5 +85,188 @@
           }
         }
        
+    }
+
+
+    // Tab All
+    .role-permission-all{
+        .role-permission-content {
+            margin-top: 11px;
+            @include content-container;
+            min-height: 100%;
+        }
+        .role-permission-search-member{
+            display: flex;
+            gap:16px;
+            margin-top: 16px;
+           .role-permission-information-search{
+            position: relative;
+            width: 100%;
+            input{
+                height: 50px;
+                width: 100%;
+                border-radius: 16px;
+                background-color: $bg-neutral-50;
+                padding-left: 24px;
+                padding-top: 5px;
+                border: none;
+                &:placeholder{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $bg-neutral-200;
+                }
+                &:focus{
+                    border: none;
+                    outline: 0;
+                }
+    
+            }
+            .button-search{
+                position: absolute;
+                right: 10px;
+                top: 20%;
+                background-color: $bg-primary-400;
+                border-radius: 12px;
+                padding: 4px 6px;
+                border: none;
+                
+            }
+           }
+           .role-permission-information-button-new-member{
+            .button-new-member{
+                background-color: $bg-primary-400;
+                width: 250px;
+                height: 50px;
+                border: none;
+                padding: 0;
+                border-radius: 16px;
+                color:black;    
+                box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+                font-size: 16px;
+                font-weight: 600;
+            
+            }
+           }
+        }
+        .role-permission-information{
+            margin-top: 48px;
+            .role-permission-information-title{
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 22px;
+            }
+            .role-permission-information-items{
+                padding: 35px 100px 35px 20px;
+                box-shadow: 20px 30px 15px rgba(209, 209, 209, 0.15);
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 16px;
+    
+                height: 100%;
+                .role-permission-information-item-left{
+                    display: flex;
+                    gap: 16px;
+                    align-items: center;
+                    .role-permission-information-item-image{
+                        img{
+                            height: 53px;
+                            width: 53px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .role-permission-information-item-name-email{
+                        div{
+                            &:nth-child(1){
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 24px;
+                                color: $bg-neutral-400;
+                            }
+                            &:nth-child(2){
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 24px;
+                                color: $bg-neutral-200;
+                            }
+                        }
+                    }
+                    .role-permission-information-item-total-post{
+                        div{
+                            &:nth-child(1){
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 24px;
+                                color: $bg-neutral-400;
+                            }
+                            &:nth-child(2){
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 24px;
+                                color: $bg-neutral-200;
+                            }
+                        }
+                    }
+                }
+                .role-permission-information-item-role{
+                    display: flex;
+                    gap: 13px;
+                    align-items: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    // Tab Role
+    .role-permission-role{       
+        .role-permission-information-button-new-role{
+            margin-top: 20px;
+            .button-new-role{
+                background-color: $bg-primary-400;
+                width: 150px;
+                height: 40px;
+                border: none;
+                padding: 0;
+                border-radius: 16px;
+                color:black;    
+                box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+                font-size: 17px;
+                font-weight: 600;
+            
+            }
+        }
+        .role-permission-item-role-name{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22px;
+        }
+        .role-permission-item-guard-name{
+            @extend .role-permission-item-role-name;
+        }
+    }
+
+    // Tab Permission
+    .role-permission-permission{
+        @extend .role-permission-role;
+        .role-permission-information-button-new-permission{
+            margin-top: 16px;
+            .button-new-permission{
+                background-color: $bg-primary-400;
+                width: 200px;
+                height: 40px;
+                border: none;
+                padding: 0;
+                border-radius: 16px;
+                color:black;    
+                box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
     }
 }
